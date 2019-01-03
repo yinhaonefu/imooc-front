@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    float使页面元素浮动起来，脱离普通流元素
+
+    clear可以清除浮动
+    https://www.w3schools.com/css/css_float.asp
+    When clearing floats, you should match the clear to the float:
+    If an element is floated to the left, then you should clear to the left.
+    Your floated element will continue to float, but the cleared element will appear below it on the web page.
+-->
+<head>
+    <title>float</title>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            font-family: '微软雅黑';
+        }
+        .container{
+            background-color: orange;
+            border: 1px solid black;
+            overflow: hidden;/*清除浮动方法二 父容器添加overflow: hidden*/
+            zoom: 1; /*兼容低版本IE*/
+        }
+
+        /*清除浮动方法三 css3伪类*/
+        /*.clearfix:after{*/
+            /*content: "";*/
+            /*display: block;*/
+            /*clear: both;*/
+        /*}*/
+        .div1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            float: left;
+            /*clear: left;*/
+        }
+        .div2{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            float: left;
+            /*clear: left;*/
+        }
+        .div3{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            float: left;
+            /*clear: left;*/
+        }
+
+
+        .div4{
+            width: 150px;
+            height: 150px;
+            background-color: green;
+        }
+
+        /*清除浮动方法一 添加空div clear:both*/
+        .div5{
+            clear: both;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container clearfix">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <div class="div5"></div>
+    </div>
+    <div class="div4"></div>
+</body>
+</html>
