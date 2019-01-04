@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    position: relative使元素相对它在常规流中的位置偏移，不会脱离常规流
+    position: absolute使元素脱离常规流，发生位置偏移，绝对定位是相对于相对定位的父容器进行偏移
+    position: fixed使元素相对于视口发生偏移，不会随着滚动条滚动出视口
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .blue{
+            width: 100px;
+            height: 100px;
+            background: blue;
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+        .red{
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<div class="blue"></div>
+<div class="red"></div>
+</body>
+</html>
