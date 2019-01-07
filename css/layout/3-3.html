@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--圣杯布局 中间左右两边宽度固定，中间响应式，并设置最小宽度，低于最小宽度页面不在发生变化-->
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .header{
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            position: fixed;
+        }
+
+        .logo{
+            float: left;
+            height: inherit;
+        }
+
+        .nav{
+            float: right;
+            color: white;
+            height: inherit;
+        }
+
+        .nav ul li{
+            list-style: none;
+            float: left;
+            line-height: 100px;
+            margin: 0 50px;
+        }
+
+        ul li,.logo:hover{
+            cursor: pointer;
+        }
+
+        .content{
+            padding: 100px 220px 100px 200px;
+            min-width: 700px;
+        }
+
+        .content .center{
+            width: 100%;
+            height: 600px;
+            background-color: pink;
+            float: left;
+        }
+
+        .content img{
+            margin: 100px auto;
+        }
+
+        .content .left{
+            width: 200px;
+            background-color: green;
+            float: left;
+            margin-left: -100%;
+            position: relative;
+            left: -200px;
+        }
+
+        .content .right{
+            width: 220px;
+            background-color: orange;
+            float: left;
+            margin-left: -220px;
+            position: relative;
+            right: -220px;
+        }
+
+        .footer{
+            width: 100%;
+            color: white;
+            height: 100px;
+            background-color: black;
+            text-align: center;
+            position: fixed;
+            bottom: 0px;
+        }
+
+        .link ul li{
+            display: inline;
+            line-height: 100px;
+            margin: 0 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="logo">
+        <img src="http://climg.mukewang.com/58c0d2d900016ce303000100.png">
+    </div>
+    <div class="nav">
+        <ul>
+            <li>课程</li>
+            <li>职业路径</li>
+            <li>实战</li>
+            <li>猿问</li>
+            <li>手记</li>
+        </ul>
+    </div>
+</div>
+<div class="content">
+    <div class="center"><img src="http://climg.mukewang.com/590037e00001fab706000400.jpg"></div>
+    <div class="left">这是左侧这是左侧这是左侧这是左侧这是左侧这是左侧这是左侧这是左侧这是左侧这是左侧</div>
+    <div class="right">这是右侧</div>
+</div>
+<div class="footer">
+    <div class="link">
+        <ul>
+            <li>网站首页</li>
+            <li>企业合作</li>
+            <li>人才招聘</li>
+            <li>联系我们</li>
+            <li>常见问题</li>
+            <li>友情链接</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
