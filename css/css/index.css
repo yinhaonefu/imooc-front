@@ -8,6 +8,7 @@
     height: 48px;
     background-color: #07cbc9;
     position: fixed;
+    z-index: 2;
 }
 
 .logo{
@@ -76,6 +77,7 @@
 }
 
 .shade .form input, textarea{
+    color: #ffffff;
     background-color:transparent;
     width: 500px;
     margin-top: 20px;
@@ -104,4 +106,176 @@
 .shade .form button:hover{
     border: 0px;
     background-color: #07cbc9;
+}
+
+.about{
+    width: 100%;
+    height: 600px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.about-top-title, .gallery-top-title{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.short-line{
+    border: 1px solid #07cbc9;
+    height: 0;
+    width: 35px;
+    margin: 20px auto;
+}
+
+.about-middle{
+
+}
+
+.float-left{
+    float: left;
+}
+
+.about-middle{
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+.about-middle-left{
+    width: 250px;
+    position: relative;
+}
+
+.about-middle-left div{
+    margin: 10px;
+}
+
+.about-middle-center img{
+    margin: 10px;
+    width: 450px;
+    height: 350px;
+}
+
+.about-middle-left-title{
+    font-size: 40px;
+}
+
+.about-middle-left-desc{
+    background-color: white;
+    opacity: 0.4;
+    border: 1px solid black;
+    width: 400px;
+    height: 200px;
+}
+
+.about-middle-left .button{
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+}
+
+.about button{
+    color: white;
+    font-size: 18px;
+    background-color: black;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.about .button{
+    width: 100px;
+    margin: 0 auto;
+}
+
+.about .button:hover{
+    opacity: 0.1;
+    border: 2px solid black;
+}
+
+.clear{
+    clear: both;
+}
+
+.about-middle-right{
+    width: 250px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.about-middle-right-top, .about-middle-right-bottom{
+    border: 1px solid #07cbc9;
+    margin: 10px;
+    padding: 15px;
+}
+
+.count{
+    font-size: 30px;
+}
+
+.about-bottom{
+    width: 100%;
+}
+
+.about-bottom img{
+    width: 100%;
+    height: 250px;
+}
+
+.about-bottom-div{
+    width: 25%;
+    height: 250px;
+    background-color: #07cbc9;
+    float: left;
+}
+
+.about-bottom-text{
+    color: white;
+    text-align: left;
+}
+
+.about-bottom-text div{
+    margin: 13px;
+}
+.about-bottom-text .button{
+    text-align: center;
+}
+
+.gallery{
+    text-align: center;
+}
+
+.gallery-bottom{
+    width: 960px;
+    margin: 20px auto;
+}
+
+.gallery-bottom-img img{
+    width: 300px;
+}
+
+.gallery-bottom-img{
+    width: 300px;
+    float: left;
+    margin: 10px;
+}
+
+.gallery-bottom-shade{
+    margin-top: -5px;
+    width: 290px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    line-height: 50px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.footer{
+    width: 100%;
+    height: 48px;
+    background-color: #07cbc9;
+    text-align: center;
+    color: white;
+    line-height: 48px;
 }
